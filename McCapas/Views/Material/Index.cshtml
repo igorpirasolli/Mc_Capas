@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Material>
+
+@{
+    ViewData["title"] = "Material";
+}
+
+<div class="container">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1 class="sublinhado">Materiais</h1>
+
+        <div>
+            <a class="btn btn-dark mx-2" asp-action="Exportar" asp-controller="Material"><i class="bi bi-file-earmark-plus mx-2"></i>Exportar planilha Excel</a>
+            <a class="btn btn-dark mx-2" asp-action="Create" asp-controller="Material"><i class="bi bi-file-earmark-plus mx-2"></i>Adicionar novo Material</a>
+
+        </div>
+
+    </div>
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success text-light" role="alert">
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+
+    <table id="capas" class="table table-striped table-hover">
+        <thead>
+            <tr>
+
+                <th scope="col">Material</th>
+                <th scope="col">Cor</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Data inserida</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var material in Model)
+                {
+                    <tr>
+                        <th scope="row">@material.TipoDoMaterial</th>
+                        <td>@material.Cor</td>
+                        <td>@material.Quantidade</td>
+                        <td>@material.DataAtual</td>
+                        <td>
+                            <a class="btn btn-warning mx-2" asp-action="Edit" asp-route-Id="@material.Id" asp-controller="Material"><i class="bi bi-pencil-square mx-2"></i>Editar</a>
+                            <a class="btn btn-danger mx-2" asp-action="Delete" asp-route-Id="@material.Id" asp-controller="Material"><i class="bi bi-trash mx-2"></i>Excluir</a>
+                        </td>
+
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
