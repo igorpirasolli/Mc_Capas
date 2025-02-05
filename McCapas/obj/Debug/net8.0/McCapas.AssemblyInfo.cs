@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("McCapas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7da4a37562a14b9cdc57f0e0f26bf0a3ddead4c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dcc9fc1cbc18177a9e548b9dcbf5ea2887aef819")]
 [assembly: System.Reflection.AssemblyProductAttribute("McCapas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("McCapas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

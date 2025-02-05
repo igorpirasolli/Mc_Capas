@@ -1,10 +1,15 @@
 using McCapas.Data;
 using McCapas.Services;
+using McCapas.ServicesLogin;
+using McCapas.ServicesLogin.SenhaService;
 using McCapas.ServicesMaterial;
 using McCapas.ServicesTapete;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddScoped<IloginInterface, LoginService>();
+builder.Services.AddScoped<ISenhaInterface, SenhasService>();
+
 builder.Services.AddScoped<IMaterialService, MaterialService>();    
 
 builder.Services.AddScoped<ItapeteServices, TapeteServices>();

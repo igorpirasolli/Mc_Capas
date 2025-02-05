@@ -12,5 +12,7 @@ namespace McCapas.Data
         public DbSet<Capas> capas { get; set; }
         public DbSet<Material> materialDeFabricacao { get; set; }
         public DbSet<Tapetes> tapete { get; set; }
+
+        public DbSet<UsuarioModel> usuarios { get; set; }
     }
 }
