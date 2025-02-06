@@ -1,4 +1,6 @@
-﻿﻿@if (TempData["MensagemSucesso"] != null)
+﻿@model McCapas.Dto.UsuarioLoginDto
+
+@if (TempData["MensagemSucesso"] != null)
 {
     <div class="alert alert-primary text-light" role="alert">
         @TempData["MensagemSucesso"]
@@ -12,16 +14,24 @@
     </div>
 }
 
+@{
+    Layout = "_layoutDeslogada";
+}
+
+
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
 
 <div class="container">
-    <form>
+    <form asp-action="Login" asp-controller="Login" method="post">
         <div class="mb-3">
             <label for="email1" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email1">
+            <input type="email" class="form-control" id="email1" asp-for="Email">
         </div>
         <div class="mb-3">
             <label for="senha" class="form-label">Senha:</label>
-            <input type="password" class="form-control" id="senha">
+            <input type="password" class="form-control" id="senha" asp-for="Senha">
         </div>
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary w-25 mx-2">Entrar</button>

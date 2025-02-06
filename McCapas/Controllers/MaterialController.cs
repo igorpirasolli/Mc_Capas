@@ -1,6 +1,7 @@
 ﻿using ClosedXML.Excel;
 using McCapas.Data;
 using McCapas.Models;
+using McCapas.ServicesLogin.SessaoService;
 using McCapas.ServicesMaterial;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,17 +10,33 @@ namespace McCapas.Controllers
     public class MaterialController : Controller
     {
         private readonly IMaterialService _materialService;
+        private readonly ISessaoInterface _sessaoInterface;
 
-        public MaterialController(IMaterialService materialService) => _materialService = materialService;
+        public MaterialController(IMaterialService materialService, ISessaoInterface sessaoInterface)
+        {
+            _materialService = materialService;
+            _sessaoInterface = sessaoInterface;
+        }
         
         public async Task<IActionResult> Index()
         {
-           var materials = await _materialService.GetMaterialsAsync();
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
+            var materials = await _materialService.GetMaterialsAsync();
             return View(materials);
         }
 
         public IActionResult Create()
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             return View();
         }
 
@@ -40,6 +57,11 @@ namespace McCapas.Controllers
         [HttpGet]
         public async Task<IActionResult >Edit(int? id)
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (id == null || id == 0)
             {
                 return NotFound();
@@ -72,6 +94,11 @@ namespace McCapas.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (id == null || id == 0)
             {
                 return NotFound();

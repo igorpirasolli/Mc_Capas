@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bEtfYk1RxhmOuIuezGBHcTrzSdoRK3qMPRoB+yBS9sqnwFTKK80LODNp+631Bvmuao1UxuFA+Z+u+6uxPF8DEQ==",
+  "dgSpecHash": "IQdBhfESJP+kqrktEGRSIXAyfKkdj1sBOPVxePtTjOK6BGxIQoP0luK5hJiAH+/PgacGd/x9/BVHyS8kZPbTNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\igorf\\OneDrive\\Área de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\McCapas.csproj",
   "expectedPackageFiles": [
@@ -54,6 +54,7 @@
     "C:\\Users\\igorf\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\igorf\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\igorf\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\igorf\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\igorf\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
     "C:\\Users\\igorf\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
     "C:\\Users\\igorf\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",

@@ -2,6 +2,7 @@
 using McCapas.Dto;
 using McCapas.Models;
 using McCapas.ServicesLogin.SenhaService;
+using McCapas.ServicesLogin.SessaoService;
 
 namespace McCapas.ServicesLogin
 {
@@ -9,11 +10,49 @@ namespace McCapas.ServicesLogin
     {
         private readonly AppDbContext _context;
         private readonly ISenhaInterface _senhaInterface;
+        private readonly ISessaoInterface _sessaoInterface;
 
-        public LoginService(AppDbContext context, ISenhaInterface senhaInterface)
+        public LoginService(AppDbContext context, ISenhaInterface senhaInterface, ISessaoInterface sessaoInterface)
         {
             _context = context;
             _senhaInterface = senhaInterface;
+            _sessaoInterface = sessaoInterface;
+        }
+
+        public async Task<ResponseModel<UsuarioLoginDto>> Login(UsuarioLoginDto loginDto)
+        {
+            ResponseModel<UsuarioLoginDto> response = new ResponseModel<UsuarioLoginDto>();
+
+            try
+            {
+                var usuario = _context.usuarios.FirstOrDefault(x => x.Email == loginDto.Email);
+
+                if (usuario == null)
+                {
+                    response.Mensagem = "Credenciais Inválidas!";
+                    response.Status = false;
+                    return response;
+                }
+
+                if (!_senhaInterface.VerificaSenha(loginDto.Senha, usuario.SenhaHash, usuario.SenhaSalt))
+                {
+                    response.Mensagem = "Credenciais Inválidas";
+                    response.Status = false;
+                    return response;
+                }
+
+                //criando sessão
+                _sessaoInterface.CriarSessao(usuario);
+                response.Mensagem = "Você esta logado!";
+                return response;
+                
+            }
+            catch (Exception ex)
+            {
+                response.Mensagem = "Credenciais inválidas!";
+                response.Status = false;
+                return response;
+            }
         }
 
         public async Task<ResponseModel<UsuarioModel>> Registrar(UsuarioRegistroDto registrodto)

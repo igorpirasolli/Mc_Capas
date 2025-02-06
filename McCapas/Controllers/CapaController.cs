@@ -2,6 +2,7 @@
 using McCapas.Data;
 using McCapas.Models;
 using McCapas.Services;
+using McCapas.ServicesLogin.SessaoService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace McCapas.Controllers
@@ -9,20 +10,33 @@ namespace McCapas.Controllers
     public class CapaController : Controller
     {
         private readonly ICapaService _capaService;
+        private readonly ISessaoInterface _sessaoInterface;
 
-        public CapaController( ICapaService capaService)
+        public CapaController( ICapaService capaService, ISessaoInterface sessaoInterface)
         {
             _capaService = capaService;
+            _sessaoInterface = sessaoInterface;
         }
 
         public async Task<IActionResult> Index()
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
+
             var capas = await _capaService.GetAllCapas();
             return View(capas);
         }
 
         public IActionResult Create()
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             return View();
         }
 
@@ -43,6 +57,11 @@ namespace McCapas.Controllers
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (id == null || id == 0) {
                 return NotFound();
             }
@@ -74,6 +93,11 @@ namespace McCapas.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
+            var usuario = _sessaoInterface.BuscarSessao();
+            if (usuario == null)
+            {
+                return RedirectToAction("Login", "Login");
+            }
             if (id == null || id == 0)
             {
                 return NotFound();

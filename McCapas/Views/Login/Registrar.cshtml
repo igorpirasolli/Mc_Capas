@@ -14,6 +14,11 @@
     </div>
 }
 
+@{
+    Layout = "_layoutDeslogada";
+}
+
+<div asp-validation-summary="All" class="text-danger"></div>
 
 <div asp-validation-summary="All" class="text-danger">
 </div>
@@ -54,7 +59,7 @@
 
         <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary w-25 mx-2">Cadastrar</button>
-            <a asp-action="Index" asp-controller="Login" class="btn w-25">Voltar</a>
+            <a asp-action="Login" asp-controller="Login" class="btn w-25">Voltar</a>
         </div>
 
     </form>

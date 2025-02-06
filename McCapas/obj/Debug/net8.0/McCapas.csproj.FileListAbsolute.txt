@@ -343,3 +343,4 @@ C:\Users\igorf\OneDrive\Área de Trabalho\pastas\curso c# poo\Nova pasta\EStoque
 C:\Users\igorf\OneDrive\Área de Trabalho\pastas\curso c# poo\Nova pasta\EStoqueMcCapas\McCapas\bin\Debug\net8.0\RBush.dll
 C:\Users\igorf\OneDrive\Área de Trabalho\pastas\curso c# poo\Nova pasta\EStoqueMcCapas\McCapas\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\igorf\OneDrive\Área de Trabalho\pastas\curso c# poo\Nova pasta\EStoqueMcCapas\McCapas\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\igorf\OneDrive\Área de Trabalho\pastas\curso c# poo\Nova pasta\EStoqueMcCapas\McCapas\bin\Debug\net8.0\Newtonsoft.Json.dll

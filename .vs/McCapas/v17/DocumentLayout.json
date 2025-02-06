@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\views\\shared\\_layoutdeslogada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\views\\shared\\_layoutdeslogada.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\models\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|c:\\users\\igorf\\onedrive\\\u00E1rea de trabalho\\pastas\\curso c# poo\\nova pasta\\estoquemccapas\\mccapas\\views\\login\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB9876FB-2322-4F28-B21D-12533AC18419}|McCapas\\McCapas.csproj|solutionrelative:mccapas\\views\\login\\registrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +38,99 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "McCapas\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "McCapas\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-06T01:36:32.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Models\\ResponseModel.cs",
+              "RelativeDocumentMoniker": "McCapas\\Models\\ResponseModel.cs",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Models\\ResponseModel.cs",
+              "RelativeToolTip": "McCapas\\Models\\ResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T01:33:27.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "McCapas\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "McCapas\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwFMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T01:19:51.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "McCapas\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "McCapas\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T01:10:58.131Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_layoutDeslogada.cshtml",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Shared\\_layoutDeslogada.cshtml",
+              "RelativeDocumentMoniker": "McCapas\\Views\\Shared\\_layoutDeslogada.cshtml",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Shared\\_layoutDeslogada.cshtml",
+              "RelativeToolTip": "McCapas\\Views\\Shared\\_layoutDeslogada.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAgwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T01:10:17.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Login\\Registrar.cshtml",
+              "RelativeDocumentMoniker": "McCapas\\Views\\Login\\Registrar.cshtml",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Login\\Registrar.cshtml",
+              "RelativeToolTip": "McCapas\\Views\\Login\\Registrar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T01:07:04.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "McCapas\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\igorf\\OneDrive\\\u00C1rea de Trabalho\\pastas\\curso c# poo\\Nova pasta\\EStoqueMcCapas\\McCapas\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "McCapas\\Views\\Login\\Login.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwBAAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T01:04:28.819Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
